@@ -197,6 +197,13 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Remove Door 50 NOT FE",
+   Callback = function()
+  game:GetService("Workspace").CurrentRooms:FindFirstChild("50").Door.Door:remove()
+   end,
+})
+
 local Tab = Window:CreateTab("Rifts", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("Rifts")
 
@@ -451,5 +458,108 @@ local Button = Tab:CreateButton({
    Name = "Troll",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/RBXDM/SCRMODE/refs/heads/main/Troll'))()
+   end,
+})
+
+local Tab = Window:CreateTab("Extras", "rewind")
+local Section = Tab:CreateSection("Extras")
+
+local Button = Tab:CreateButton({
+   Name = "Flicker Lights",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/Flicker%20Lights'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Break Lights",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/Break%20Lights'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Red Room",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/Room%20Red%20Jack'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "HeartBeat",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/HeartBeat"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Seek Crucifix",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/Seek%20Crucifix'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "MiniMap",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/Minimap'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Spawn A-60",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/zivfijbA'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Candy",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/persopoiu/scripts/main/candyscript/candy.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "LOLHAX",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/geoduude/roblox/refs/heads/master/LX-SelfLeak/LX%20Doors%20v3.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Spawn Static",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/3CUbaYD0'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Seek Model Old",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/uXY1EAxZ"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Spawn Seek Eyes",
+   Callback = function()
+   require(game.ReplicatedStorage.ClientModules.EntityModules.Seek).tease(nil, workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")], 100)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Burger",
+   Callback = function()
+   local item = game:GetObjects("rbxassetid://100522628")[1]
+                item.Parent = game.Players.LocalPlayer.Backpack
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "FlashLight",
+   Callback = function()
+   local item = game:GetObjects("rbxassetid://11242492137")[1]
+                item.Parent = game.Players.LocalPlayer.Backpack
    end,
 })
