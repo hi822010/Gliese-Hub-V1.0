@@ -109,6 +109,25 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Giggle",
+   Callback = function()
+   getgenv().damage = 8 -- Default: 8
+getgenv().minRadius = -20 -- Default: -20
+getgenv().maxRadius = 20 -- Default: 20
+getgenv().ragdollDissapears = true -- Default: true
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Test/main/Doors/GiggleSpawn.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "TrollFace",
+   Callback = function()
+   loadstring(game:HttpGet("https://api.hugebonus.xyz/scripts/TrollFaceSpawner.lua"))()
+   end,
+})
+
 local Tab = Window:CreateTab("More", "rewind")
 local Section = Tab:CreateSection("More")
 
@@ -130,6 +149,13 @@ local Button = Tab:CreateButton({
    Name = "Get All Badges",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/hi822010/Get-All-Badges/refs/heads/main/Get%20All%20Badges'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Floor Is Lava",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/hi822010/FloorIsLava/refs/heads/main/FloorIsLava'))()
    end,
 })
 
@@ -161,6 +187,13 @@ local Toggle = Tab:CreateToggle({
    Callback = function(Value)
    loadstring(game:HttpGet('https://rawscripts.net/raw/Universal-Script-fullbright-1324'))()
    loadstring(game:HttpGet('https://rawscripts.net/raw/Universal-Script-fullbright-1324'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Chill Seek",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/chill-seek/refs/heads/main/chillseklal.Pl.txt"))()
    end,
 })
 
@@ -234,13 +267,6 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Key (Shop Menu)",
-   Callback = function()
-   loadstring(game:HttpGet('https://pastefy.app/akikgBH8/raw'))()
-   end,
-})
-
-local Button = Tab:CreateButton({
    Name = "Blackhole",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Black%20Hole.lua"))()
@@ -265,6 +291,55 @@ local Button = Tab:CreateButton({
    Name = "Guiding Candle",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/RBXDM/name/refs/heads/main/Guiding-Candle'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Magnet",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Moon Bottle",
+   Callback = function()
+loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/04d7dd5e02688624b958b8c2604b924c/raw/9e86b34249f44ed2dd433176e67daaf3db30cde8/MoonBottle'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Spiral Bottle",
+   Callback = function()
+   loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/8b05c837bea9effac2554340465b4be1/raw/3f3be0ee72e7f153db39a16a40fa63dce6cde72d/SpiralBottle'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Laser gun",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/9imumVD3'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "F3X",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/iimateiYT/Scripts/refs/heads/main/F3X.lua'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Rocket Launcher",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/rocketLauncher.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Shears",
+   Callback = function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua')))()
    end,
 })
 
@@ -366,8 +441,15 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Grace",
+   Name = "Grace Doors",
    Callback = function()
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/RBXDM/SCRMODE/refs/heads/main/Grace'))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/PublicScripts/refs/heads/main/GraceEntitiesScript"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Troll",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/RBXDM/SCRMODE/refs/heads/main/Troll'))()
    end,
 })
